@@ -24,6 +24,3 @@ d = |A*x+B*y+C|/sqrt(A^2+B^2)
 
 Here is the results of doing RANSAC to fit a line from the data above. Inliers are green while outliers are red, the function had a max iteration size of 50, and a distance tolerance of 0.5. The max iteration size depends on the ratio of inliers to the total number of points. The more inliers our data contains the higher the probability of selecting inliers to fit the line to.
 
-<img src="https://github.com/AnkushKansal/Ransac_Lines/blob/master/RansacLines_Output.PNG" width="700" height="400" />
-
-
