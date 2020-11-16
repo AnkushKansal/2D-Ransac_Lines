@@ -1,11 +1,10 @@
-/* \author Aaron Brown */
 // Quiz on implementing simple RANSAC line fitting
 
-#include "../../render/render.h"
+#include "render/render.h"
 #include <unordered_set>
-#include "../../processPointClouds.h"
+#include "ProcessPointClouds/processPointClouds.h"
 // using templates for processPointClouds so also include .cpp to help linker
-#include "../../processPointClouds.cpp"
+#include "ProcessPointClouds/processPointClouds.cpp"
 
 pcl::PointCloud<pcl::PointXYZ>::Ptr CreateData()
 {
@@ -43,13 +42,6 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr CreateData()
   	return cloud;
 
 }
-
-pcl::PointCloud<pcl::PointXYZ>::Ptr CreateData3D()
-{
-	ProcessPointClouds<pcl::PointXYZ> pointProcessor;
-	return pointProcessor.loadPcd("../../../sensors/data/pcd/simpleHighway.pcd");
-}
-
 
 pcl::visualization::PCLVisualizer::Ptr initScene()
 {
