@@ -1,4 +1,4 @@
-# Implementing RANSAC
+# Implementing 2D RANSAC
 
 RANSAC stands fors Randomly Sample Consensus, and is a method for detecting outliers in data. RANSAC runs a for a max number of iterations, and returns the model with the best fit. Here we will do a quiz that has you implement RANSAC for fitting a line in 2D point data with outliers. The quiz is located in `src/quiz/ransac2d.cpp` and the function to fill out is `Ransac` which takes in arguments for a point cloud, max iterations to run, and distance tolerance. The point cloud is actually `pcl::PointXYZ` but the z component will be set to zero to make things easy to visualize. The image below shows how the data looks.
 
